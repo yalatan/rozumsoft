@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.header{font-size: 1.5rem;
+  text-transform: capitalize;
+  font-style: italic;
+color: #554d1d;
+}
+h4{
+  margin: auto;
+  text-align: center;
+}
+h5{
+  margin-block-end: 0;
+  margin-block-start: 0;
+  font-size: 0.5rem;
+  margin-right: 10px;
+  text-align: right;
+}
+.container{
+  width: 100%;
+  max-width: 1440px;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border: 10px solid #554d1d;
+  border-radius: 15px;
+  box-sizing: border-box;
+  background-color: #f8f0c4;
+  }
+  .container--map{
+    width: 60%;
+    min-width: 300px;
+    height: 70vh;
+  min-height: 500px;
+  
+   /* border: 1px solid #336e75;*/
+  }
+  .container--map * {
+    touch-action: auto
+  }
+  .container--item{
+    width: 30%;
+    max-width: 400px;
+  }
+  
+.list{
+list-style: none;
+padding: 0;
+}
+.list--item{
+  width: 100%;
+  /*height: 80px;*/
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  font-style: italic;
+  background-image:   linear-gradient(to right top, #554d1d, #7b7343, #a39a6c, #cdc497, #f8f0c4);
+  /*#beb26c*/
+    border: 1px solid #554d1d;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    color: #554d1d;
+    transition: all 0.25s;
+}
+.list--item:hover, .list--item.active{
+  background-image: linear-gradient(to right top, #746d3e, #6c6536, #645d2d, #5d5525, #554d1d);
+  color: #f8f0c4;
+  transition: all 1s;
+}
+@media screen and (max-width: 800px){
+  .container--item{
+    width: 90%;
+  }
+  .container--map{
+    width: 100%;
+    height: 50vh;
+    min-height: 50vh;
+    max-height: 50vh;
+  } 
+}

@@ -1,0 +1,24 @@
+.form_block{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+    width: 100%;
+    background-image:   linear-gradient(to right top, #554d1d, #7b7343, #a39a6c, #cdc497, #f8f0c4);
+}
+.form_block h3{
+    width: 100%;
+   color: #ffffff;
+text-align: center;
+}
+.form{
+    background-color: #eee;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(85,77,29,1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(85,77,29,1);
+    box-shadow: 10px 10px 5px 0px rgba(85,77,29,1);
+    padding: 15px;
+    border-radius: 15px;
+    width: 600px;
+    height: 200px;
+}
